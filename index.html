@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#080611">
+<title>JEEVIKAA : HEART FIGHT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<header id="hud" class="hidden">
+  <div>
+    <small>JEEVIKAA : HEART FIGHT</small>
+    <h2 id="score">SCORE 0000</h2>
+    <p id="wave">WAVE 1</p>
+  </div>
+  <div class="right">
+    <button id="pause">Ⅱ PAUSE</button>
+    <p>HULL <span id="hpText">100</span>%</p>
+    <div class="bar"><div id="hp"></div></div>
+  </div>
+</header>
+
+<main id="screen">
+  <section id="menu" class="panel">
+    <p class="eyebrow">✦ I LOVE YOU JEEVIKAAA✦</p>
+    <h1>JEEVIKAA<br><span>HEART FIGHT</span></h1>
+    <p class="subtitle">CHAL CHAL SMILE KE SATH START KARIYO</p>
+    <p class="note">JAANU TU NA BHT BEAUTIFULL HAI YARR💗</p>
+    <button id="start">START MISSION ♥</button>
+    <button id="endless" class="secondary">ENDLESS LIKE MY LOVE FOR YOU</button>
+    <button id="love" class="secondary">SUPRISE 💌</button>
+    <div class="records">
+      <span>BEST SCORE <b id="best">0</b></span>
+      <span>BEST WAVE <b id="bestWave">0</b></span>
+    </div>
+    <small class="help">PC: WASD + MOUSE + HOLD CLICK<br>PHONE: LEFT SIDE MOVE · RIGHT SIDE AIM & FIRE</small>
+  </section>
+
+  <section id="pausePanel" class="panel hidden">
+    <p class="eyebrow">SYSTEM PAUSED</p>
+    <h1>PRINCESS<br><span>KY HUAA</span></h1>
+    <p class="note">TU BHT PYARI JALDI SE CONTINUE KAR. 💗</p>
+    <button id="resume">CONTINUE</button>
+    <button id="quit" class="secondary">MAIN MENU</button>
+  </section>
+
+  <section id="over" class="panel hidden">
+    <p class="eyebrow">MISSION COMPLETE</p>
+    <h1>YOU ARE<br><span>MINE</span></h1>
+    <p id="result" class="note"></p>
+    <p id="endMessage" class="note pink"></p>
+    <button id="retry">FILL SE KHELUNGI RITYAA ♥</button>
+    <button id="home" class="secondary">MAIN MENU</button>
+  </section>
+
+  <section id="letter" class="panel hidden">
+    <p class="eyebrow">A SECRET TRANSMISSION</p>
+    <h1>MY DEAR,<br><span>PRINCESS</span></h1>
+    <p class="note letterText">Jeevika yaar main na tere piche pagal ho chuka hu. 💗</p>
+    <p class="note">meko ni pata lekin babyyy main tuzhse bht zyada obsessed hu,I LOVE YOU JEEVIKAAA ✨</p>
+    <button id="back">I LOVE YOU RITYAA</button>
+  </section>
+</main>
+
+<div id="toast"></div>
+<div id="touchHint">MOVE LEFT · AIM AND SHOOT RIGHT</div>
+<script src="game.js"></script>
+</body>
+</html>
